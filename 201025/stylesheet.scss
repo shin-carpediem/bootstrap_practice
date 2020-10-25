@@ -1,0 +1,304 @@
+@mixin hover($color) {
+  &:hover {
+    cursor: pointer;
+    color: $color;
+    transition: all 0.5s;
+  }
+}
+
+body {
+  font-family: Georgia, '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 15px;
+  box-sizing: border-box;
+  width: 1040px;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+// from
+header {
+  height: 215px;
+  margin: 60 auto;
+}
+
+.header-left {
+  margin: 60px auto;
+  height: 60px;
+  float: left;
+  a {
+    @include hover(#414141);
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+  }
+  p {
+    color: #777777;
+  }
+}
+
+.header-nav {
+  height: 100px;
+  // display: inline-block;
+  color: #343434;
+  ul {
+    list-style-type: none;
+    li {
+      @include hover(#c69330);
+      margin: 5px;
+  }
+    li:first-of-type {
+      @include hover($color);
+      &:hover {
+
+    }
+  }
+}
+}
+
+.header-nav-pop-up-1 {
+  display: none;
+}
+.header-nav-pop-up-2 {
+  display: none;
+  ul {
+    list-style-type: none;
+  }
+}
+
+.header-search {
+  height: 100px;
+}
+// .header-search-wider:active {
+// }
+// here
+
+
+// from
+.main-img {
+  height: 500px;
+}
+.main-text {
+  margin: 100px;
+  font-size: 25px;
+  color: #777777;
+}
+
+.main-posted-list {
+  margin-top: 20px;
+}
+.main-posted-list-left {
+  color: #cdcdcd;
+  a {
+    @include hover(#666666);
+  }
+}
+.main-posted-list-right {
+  color: #414141;
+  font-size: 20px;
+  a {
+    @include hover(#c69330);
+  }
+}
+.main-nav {
+  ul {
+    list-style-type: none;
+    li {
+      display: inline-block;
+      padding: 15px;
+      border: 1px solid #cccccc;
+      margin: 5px;
+      text-align: center;
+    }
+  }
+}
+// here
+
+
+// from
+// footer {
+// }
+
+.footer-top {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  display: inline-block;
+  margin-top: 70px;
+  margin-bottom: 75px;
+}
+
+.footer-left-top {
+  display: inline-block;
+}
+
+.footer-left {
+  width: 280px;
+  height: 280px;
+}
+.footer-img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+.footer-left-name {
+  color: #333333;
+  font-size: 18px;
+}
+.footer-left-icon {
+  margin: 10px;
+  i {
+    color: #666666;
+    @include hover(#999999);
+    margin: 5px;
+  }
+}
+.footer-left-text {
+  margin-top: 20px;
+  color: #666666;
+}
+
+.footer-right-in {
+  a {
+    @include hover(#c69330);
+  }
+}
+
+
+
+
+
+
+
+.footer-bottom {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 55px;
+  padding-bottom: 80px;
+  display: inline-block;
+}
+.footer-bottom-icon {
+  i {
+    color: #666666;
+    @include hover(#999999);
+    margin: 10px;
+  }
+}
+.footer-bottom-text {
+  margin: auto;
+  span {
+    @include hover(#121212);
+  }
+}
+
+// here
+
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
