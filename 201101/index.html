@@ -106,9 +106,6 @@
 
 
 
-
-
-
   <div class="container bg-white py-5 my-5">
     <!-- Bootstrapの特徴 -->
     <div id="column">
@@ -366,6 +363,127 @@
     <div id="accordion">
       <h2 class="text-center py-3">よくある質問</h2>
     </div>
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              プログラミングスキルは必要ですか？
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            HTML/CSS,BootStrapの基礎が必要です。しかし勉強中であれば大丈夫だと思います。
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              稼げるようになりますか？
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            半年から一年くらいしっかりと勉強をすれば稼げるようになると思います。 しかし、プログラミングで稼ぐためには技術力だけでなく営業力も必要になるので日々勉強が必要です。
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+              aria-expanded="false" aria-controls="collapseThree">
+              追加でかかる費用はありますか？
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            サーバー代、ドメイン代が必要になります。 おすすめのサーバーはエックスサーバー 、ドメインはお名前ドメインがおすすめです。
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- お問い合わせ -->
+    <div id="accordion">
+      <h2 class="text-center py-3">お問い合わせ</h2>
+    </div>
+    <form class="needs-validation col-8 mx-auto" novalidate>
+      <div class="form-row">
+        <div class="col-12 mb-3">
+          <label for="validationCustom01">苗字</label>
+          <input type="text" class="form-control" id="validationCustom02" required>
+          <div class="valid-feedback">
+            苗字を入れてください
+          </div>
+        </div>
+        <div class="col-12 mb-3">
+          <label for="validationCustom02">名前</label>
+          <input type="text" class="form-control" id="validationCustom01" required>
+          <div class="valid-feedback">
+            名前を入れてください
+          </div>
+        </div>
+
+      </div>
+      <div class="form-row">
+        <div class="col-12 mb-3">
+          <label for="validationCustom03">住所</label>
+          <select class="custom-select" id="validationCustom03" required>
+            <option value="">Choose...</option>
+            <option value="1">東京</option>
+            <option value="2">千葉</option>
+            <option value="3">神奈川</option>
+            <option value="3">埼玉</option>
+            <option value="3">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            同意する
+          </label>
+          <div class="invalid-feedback">
+            同意するにチェックを入れてください。
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </form>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
 
 
 
@@ -373,6 +491,52 @@
 
   </div>
 
+
+  <footer class="bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-12">
+          <div class="py-4">
+            <h4 class="d-inline-block py-3 border-bottom border-info">Profile</h4>
+          </div>
+          <div class="mx-5">
+            <img class="img-fluid rounded-circle" src="img/img8.jpg" alt="...">
+          </div>
+          <div class="py-3 text-center">
+            <h5 class="d-inline-block py-2 border-bottom border-info">hogehoge</h5>
+          </div>
+          <p>hogehoge
+          </p>
+        </div>
+
+        <div class="col-md-4 col-12">
+          <div class="py-4">
+            <h4 class="d-inline-block py-3 border-bottom border-info">Portfolio</h4>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">YouTube Channel</a></li>
+            <li class="list-group-item"><a href="#">Portfolio Site</a></li>
+            <li class="list-group-item"><a href="#">Amazon</a></li>
+            <li class="list-group-item"><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 col-12">
+          <div class="py-4">
+            <h4 class="d-inline-block py-3 border-bottom border-info">Twitter</h4>
+          </div>
+          <a class="twitter-timeline" data-lang="ja" data-height="500"
+            href="https://twitter.com/38Punkd?ref_src=twsrc%5Etfw">Tweets by 38Punkd</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+
+    </div>
+    <div class="bg-dark text-white text-center p-3">
+      Copyright - hogehoge, 2020 All Rights Reserved.
+    </div>
+
+  </footer>
 
 
 
