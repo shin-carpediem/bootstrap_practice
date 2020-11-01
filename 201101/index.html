@@ -11,7 +11,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="stylesheet.css">
-  <title>Hello, world!</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+  <title>Bootstrap</title>
 </head>
 
 <body class="bg-light">
@@ -25,28 +28,28 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link text-white" href="column">column</a>
+            <a class="nav-link text-white" href="#column">column</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="Flex">Flex</a>
+            <a class="nav-link text-white" href="#Flex">Flex</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="tab">tab</a>
+            <a class="nav-link text-white" href="#tab">tab</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="Embeds">Embeds</a>
+            <a class="nav-link text-white" href="#Embeds">Embeds</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="modal">modal</a>
+            <a class="nav-link text-white" href="#modal">modal</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="card">card</a>
+            <a class="nav-link text-white" href="#card">card</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="accordion">accordion</a>
+            <a class="nav-link text-white" href="#accordion">accordion</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="contactform">contactform</a>
+            <a class="nav-link text-white" href="#contactform">contactform</a>
           </li>
         </ul>
       </div>
@@ -114,13 +117,13 @@
 
     <div class="row">
       <div class="col-md-4 col-12">
-        <img class="img-fluid" src="img/img4.jpg" alt="...">
+        <img class="img-fluid rounded-pill" src="img/img4.jpg" alt="...">
       </div>
       <div class="col-md-4 col-12">
-        <img class="img-fluid" src="img/img5.jpg" alt="...">
+        <img class="img-fluid rounded-pill" src="img/img5.jpg" alt="...">
       </div>
       <div class="col-md-4 col-12">
-        <img class="img-fluid" src="img/img6.jpg" alt="...">
+        <img class="img-fluid rounded-pill border" src="img/img6.jpg" alt="...">
       </div>
     </div>
 
@@ -131,18 +134,18 @@
       <h2 class="text-center py-3">お客様の声</h2>
     </div>
     <div class="d-flex flex-wrap-reverse justify-content-center">
-      <div class="col-md-6 col-12 p-0 align-self-center h3 p-4">
+      <div class="col-md-6 col-12 p-0 align-self-center h3 p-5">
         ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
       </div>
       <div class="col-md-6 col-12 p-0 align-self-center">
-        <img class="img-fluid" src="img/img7.jpg" alt="...">
+        <img class="img-fluid rounded-circle" src="img/img7.jpg" alt="...">
       </div>
     </div>
     <div class="d-flex flex-wrap justify-content-center">
       <div class="col-md-6 col-12 p-0 align-self-center">
-        <img class="img-fluid" src="img/img8.jpg" alt="...">
+        <img class="img-fluid rounded-circle" src="img/img8.jpg" alt="...">
       </div>
-      <div class="col-md-6 col-12 p-0 align-self-center h3 p-4">
+      <div class="col-md-6 col-12 p-0 align-self-center h3 p-5">
         ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
       </div>
     </div>
@@ -194,7 +197,7 @@
     <div id="Embeds">
       <h2 class="text-center py-3">Youtube</h2>
     </div>
-    <div class="embed-responsive embed-responsive-16by9">
+    <div class="embed-responsive embed-responsive-16by9 rounded-lg">
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
         allowfullscreen></iframe>
     </div>
@@ -208,7 +211,7 @@
     <div class="row">
       <div class="col-sm-6 col-12 pt-3">
         <!-- Button trigger modal -->
-        <div class="text-dark border p-3" data-toggle="modal" data-target="#exampleModalCenter1">
+        <div class="text-dark border p-3 rounded-pill" data-toggle="modal" data-target="#exampleModalCenter1">
           何ヶ月ぐらい勉強すれば稼げるようになりますか？
         </div>
 
@@ -216,7 +219,7 @@
         <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"
           aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
+            <div class="modal-content rounded-lg">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalCenterTitle">何ヶ月ぐらい勉強すれば稼げるようになりますか？</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -233,7 +236,7 @@
 
       <div class="col-sm-6 col-12 pt-3">
         <!-- Button trigger modal -->
-        <div class="text-dark border p-3" data-toggle="modal" data-target="#exampleModalCenter2">
+        <div class="text-dark border p-3 rounded-pill" data-toggle="modal" data-target="#exampleModalCenter2">
           WEB制作で必要なスキルは？
         </div>
 
@@ -241,7 +244,7 @@
         <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
           aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
+            <div class="modal-content rounded-lg">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalCenterTitle">WEB制作で必要なスキルは？</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -260,7 +263,7 @@
 
       <div class="col-sm-6 col-12 pt-3">
         <!-- Button trigger modal -->
-        <div class="text-dark border p-3" data-toggle="modal" data-target="#exampleModalCenter3">
+        <div class="text-dark border p-3 rounded-pill" data-toggle="modal" data-target="#exampleModalCenter3">
           おすすめのPCはありますか？
         </div>
 
@@ -268,7 +271,7 @@
         <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog"
           aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
+            <div class="modal-content rounded-lg">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalCenterTitle">おすすめのPCはありますか？</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -285,7 +288,7 @@
 
       <div class="col-sm-6 col-12 pt-3">
         <!-- Button trigger modal -->
-        <div class="text-dark border p-3" data-toggle="modal" data-target="#exampleModalCenter4">
+        <div class="text-dark border p-3 rounded-pill" data-toggle="modal" data-target="#exampleModalCenter4">
           プログラミングは独学で勉強可能ですか？
         </div>
 
@@ -293,7 +296,7 @@
         <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog"
           aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
+            <div class="modal-content rounded-lg">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalCenterTitle">プログラミングは独学で勉強可能ですか？</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -364,62 +367,66 @@
       <h2 class="text-center py-3">よくある質問</h2>
     </div>
     <div class="accordion" id="accordionExample">
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
-              プログラミングスキルは必要ですか？
-            </button>
-          </h5>
+      <div class="row col-lg-6 mx-auto">
+
+
+        <div class="card col-12">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                プログラミングスキルは必要ですか？
+              </button>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              HTML/CSS,BootStrapの基礎が必要です。しかし勉強中であれば大丈夫だと思います。
+            </div>
+          </div>
         </div>
 
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <div class="card-body">
-            HTML/CSS,BootStrapの基礎が必要です。しかし勉強中であれば大丈夫だと思います。
+        <div class="card col-12">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                稼げるようになりますか？
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              半年から一年くらいしっかりと勉強をすれば稼げるようになると思います。 しかし、プログラミングで稼ぐためには技術力だけでなく営業力も必要になるので日々勉強が必要です。
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
-              aria-expanded="false" aria-controls="collapseTwo">
-              稼げるようになりますか？
-            </button>
-          </h5>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-          <div class="card-body">
-            半年から一年くらいしっかりと勉強をすれば稼げるようになると思います。 しかし、プログラミングで稼ぐためには技術力だけでなく営業力も必要になるので日々勉強が必要です。
+
+        <div class="card col-12">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                追加でかかる費用はありますか？
+              </button>
+            </h5>
           </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingThree">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
-              aria-expanded="false" aria-controls="collapseThree">
-              追加でかかる費用はありますか？
-            </button>
-          </h5>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-          <div class="card-body">
-            サーバー代、ドメイン代が必要になります。 おすすめのサーバーはエックスサーバー 、ドメインはお名前ドメインがおすすめです。
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              サーバー代、ドメイン代が必要になります。 おすすめのサーバーはエックスサーバー 、ドメインはお名前ドメインがおすすめです。
+            </div>
           </div>
         </div>
       </div>
     </div>
-
 
 
 
     <!-- お問い合わせ -->
-    <div id="accordion">
+    <div id="contactform">
       <h2 class="text-center py-3">お問い合わせ</h2>
     </div>
-    <form class="needs-validation col-8 mx-auto" novalidate>
+    <form class="needs-validation col-4 mx-auto" novalidate>
       <div class="form-row">
         <div class="col-12 mb-3">
           <label for="validationCustom01">苗字</label>
