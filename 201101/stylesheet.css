@@ -1,0 +1,23 @@
+h1, .clown-img {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+.clown {
+  width: 10%;
+  height: auto;
+  transition-duration: 1s;
+}
+.clown:hover {
+  transform: scale(3,3);
+}
+
+
+.berry {
+  width: 10%;
+  height: auto;
+  transition-duration: 1s;
+}
+.berry:hover {
+  transform: skew(20deg, 20deg);
+}
